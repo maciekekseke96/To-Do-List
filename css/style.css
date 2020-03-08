@@ -1,0 +1,112 @@
+
+* {
+box-sizing: border-box;
+}
+
+input {
+	border: none;
+}
+
+body {
+	display:flex;
+}
+
+li.done {
+    color: red;
+}
+
+li.done h1 {
+    color: red;
+text-decoration: line-through;
+}
+.taskPriority {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.leftSection{
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;;
+}
+
+.rightSection{
+	height: 100vh;
+	width: 50vw;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.toDoManage{
+	width: 500px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 60px;
+	box-sizing: content-box;
+	border-radius: 50%;
+}
+
+.toDoManage label,.toDoManage p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+
+.toDoManage input {
+	border-bottom: 2px solid rgba(0,0,0,.3);
+	height: 40px;
+}
+
+.toDoManage button {
+	height: 2rem;
+	width: 50%;
+	border: 0.5px solid black;
+	box-shadow: -1px 1px black;
+	border-radius: 20px;
+	background-color: yellow;
+	transition: 0.5s;
+	font-family: 'Raleway', sans-serif;
+}
+
+.toDoManage button:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.toDoManage *{
+	margin-bottom: 20px;
+}
+
+.taskListContainer #taskList li {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 8px;
+	width: 45vw;
+	height: 200px;
+	border: 1px solid black;
+	
+}
+.taskListContainer #taskList li * {
+	margin: 5px;
+	font-family: 'Raleway', sans-serif;
+}
+.taskListContainer #taskList li button {
+	width:80px;
+	height: 20px;
+	border: 0.5px solid black;
+	box-shadow: -1px 1px black;
+	border-radius: 20px;
+	background-color: yellow;
+	transition: 0.2s;
+	font-family: 'Raleway', sans-serif;
+}
+
+.taskListContainer #taskList li button:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
